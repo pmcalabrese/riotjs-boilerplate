@@ -1,0 +1,22 @@
+{
+  "name": "riotjs",
+  "version": "0.0.0",
+  "authors": [
+    "Pachito Marco Calabrese <pm.calabrese@gmail.com>"
+  ],
+  "description": "riotjs mini app",
+  "keywords": [
+    "riotjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riot": "~2.1.0"
+  }
+}
