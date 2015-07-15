@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "riot": "~2.1.0"
+    "riot": "~2.2.0"
   }
 }
