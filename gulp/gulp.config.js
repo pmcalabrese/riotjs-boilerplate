@@ -8,15 +8,16 @@ module.exports = {
         copy: [
             globalPath.app+"index.html"
         ],
-        script:[
-            globalPath.app+"js/main.js"
+        copyapp: [
+            globalPath.app+"js/app.js"
         ],
-        components:[
+        components: [
             globalPath.app+"js/components/*"
-        ]
+        ],
+        components_dist:globalPath.app+"js/components/"
     },
     libs: {
-        script:[
+        script: [
             globalPath.bower+"riot/riot+compiler.min.js"
         ]
     },
