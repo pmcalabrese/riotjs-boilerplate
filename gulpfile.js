@@ -3,23 +3,23 @@ var gulp = require('gulp-help')(require('gulp'));
 var runSequence = require('run-sequence');
 
 // Get/set variables
-var config = require('./gulp.config');
+var config = require('./gulp_tasks/gulp.config');
 
 ///
 ///	 Import modularized tasks
 ///
 
 // Imports Copy - just copy some file to the dist directorya
-require('./gulp.copy')(gulp);
+require('./gulp_tasks/gulp.copy')(gulp);
 
 // Imports libs script - compile all js file in one filec alled libs.js
-require('./gulp.libs.script')(gulp);
+require('./gulp_tasks/gulp.libs.script')(gulp);
 
 // Imports Serve - spin a development server on port 8000
-require('./gulp.serve')(gulp);
+require('./gulp_tasks/gulp.serve')(gulp);
 
 // Imports Riot - spin a development server on port 8000
-require('./gulp.riot')(gulp);
+require('./gulp_tasks/gulp.riot')(gulp);
 
 ///
 ///  Setup group tasks

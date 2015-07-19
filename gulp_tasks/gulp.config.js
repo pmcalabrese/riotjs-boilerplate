@@ -1,6 +1,6 @@
 var globalPath = {
-    app : "../src/",
-    bower : "../bower_components/"
+    app : "./src/",
+    node: "./node_modules/"
 };
 
 module.exports = {
@@ -18,7 +18,8 @@ module.exports = {
     },
     libs: {
         script: [
-            globalPath.bower+"riot/riot+compiler.min.js"
+            globalPath.node+"riot/riot+compiler.min.js",
+            globalPath.node+"riotgear/dist/rg.min.js"
         ]
     },
     dist : "../dist/"
