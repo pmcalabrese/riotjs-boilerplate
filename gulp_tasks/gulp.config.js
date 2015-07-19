@@ -22,5 +22,5 @@ module.exports = {
             globalPath.node+"riotgear/dist/rg.min.js"
         ]
     },
-    dist : "../dist/"
+    dist : "../../dist"
 };
