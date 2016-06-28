@@ -1,7 +1,7 @@
 <todo>
 
   <h3>{ opts.title }</h3>
-
+  <h5>the list is alphabetical ordered</h5>
   <ul>
     <li each={ items.filter(filter); }>
       <label class={ completed: done }>
