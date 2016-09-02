@@ -9,14 +9,17 @@
   "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-help": "^1.6.1",
-    "gulp-riot": "^0.5.1",
-    "gulp-server-livereload": "^1.8.1",
-    "riot": "^2.4.1",
+    "gulp-riot": "^0.5.4",
+    "gulp-server-livereload": "^1.8.4",
+    "riot": "^2.6.1",
     "riotgear": "^3.5.0",
-    "run-sequence": "^1.2.0",
+    "run-sequence": "^1.2.1",
+    "serve-static": "^1.11.1",
     "typescript-simple": "^5.0.2"
   }
 }
