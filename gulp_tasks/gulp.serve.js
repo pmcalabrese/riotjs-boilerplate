@@ -1,10 +1,10 @@
 // Import modules
 var server = require('gulp-server-livereload');
 
-// Import config
-var config = require('./gulp.config.js');
+// Import paths
+var paths = require('./gulp.paths.js');
 
-var serverConfig = {
+var serverOptions = {
 	port:8000,
 	host:"0.0.0.0",
 	livereload: {
@@ -16,8 +16,8 @@ var serverConfig = {
 
 // Takana module
 module.exports = function(gulp){
-	gulp.task('serve', 'run a static Node.js server for development on port '+serverConfig.port, function() {
-	  gulp.src(config.dist)
-	    .pipe(server(serverConfig));
+	gulp.task('serve', 'run a static Node.js server for development on port '+serverOptions.port, function() {
+	  gulp.src(paths.dist)
+	    .pipe(server(serverOptions));
 	});
 };

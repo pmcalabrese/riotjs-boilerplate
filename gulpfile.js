@@ -2,8 +2,8 @@
 var gulp = require('gulp-help')(require('gulp'));
 var runSequence = require('run-sequence');
 
-// Get/set variables
-var config = require('./gulp_tasks/gulp.config');
+// import paths
+var paths = require('./gulp_tasks/gulp.paths');
 
 ///
 ///	 Import modularized tasks
@@ -21,6 +21,9 @@ require('./gulp_tasks/gulp.serve')(gulp);
 // Imports Riot - spin a development server on port 8000
 require('./gulp_tasks/gulp.riot')(gulp);
 
+// Imports Serve production - spin an express server with compression
+require('./gulp_tasks/gulp.serve_production')(gulp);
+
 ///
 ///  Setup group tasks
 ///
@@ -33,7 +36,7 @@ gulp.task('default', "It runs sass copy ts libs.script and libs.css", ['copy', '
 // Creates a watch task to watch files and build async
 gulp.task('watch', 'It runs the default task and then serve, while it serves whatch for files and run the task accordingly. If you are a developer you want to start from here' ,function (cb) {
     runSequence(['default','serve'],cb);
-    gulp.watch(config.app.copy, ['copy']);
-    gulp.watch(config.app.components, ['riot']);
-    gulp.watch(config.libs.script, ['libs.script']);
+    gulp.watch(paths.app.copy, ['copy']);
+    gulp.watch(paths.app.components, ['riot']);
+    gulp.watch(paths.libs.script, ['libs.script']);
 });
