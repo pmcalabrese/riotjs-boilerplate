@@ -18,7 +18,7 @@ module.exports = {
     },
     libs: {
         script: [
-            GLOBAL_PATHS.node+"riot/riot+compiler.min.js",
+            GLOBAL_PATHS.node+"riot/riot.min.js",
             GLOBAL_PATHS.node+"riotgear/dist/rg.min.js"
         ]
     },
