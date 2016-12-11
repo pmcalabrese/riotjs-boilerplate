@@ -7,7 +7,9 @@ module.exports = function(gulp){
 
 	gulp.task('riot', 'compile riotjs tags', function(){
         return gulp.src(paths.app.components)
-            .pipe(riot())
+            .pipe(riot({
+                compact: true
+            }))
 			.pipe(gulp.dest('js/components',{cwd:paths.dist}));
     });
 };

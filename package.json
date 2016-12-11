@@ -14,11 +14,11 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-help": "^1.6.1",
-    "gulp-riot": "^0.5.4",
-    "gulp-server-livereload": "^1.8.4",
-    "riot": "^2.6.1",
+    "gulp-riot": "^1.0.2",
+    "gulp-server-livereload": "^1.9.2",
+    "riot": "^3.0.2",
     "riotgear": "^3.5.0",
-    "run-sequence": "^1.2.1",
+    "run-sequence": "^1.2.2",
     "serve-static": "^1.11.1",
     "typescript-simple": "^5.0.2"
   }

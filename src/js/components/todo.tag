@@ -5,13 +5,13 @@
   <ul>
     <li each={ items.filter(filter); }>
       <label class={ completed: done }>
-        <input type="checkbox" checked={ done } onclick={ parent.toggle }> <span class="{completed : done}"> { title } </span><a class="pure-button button-error button-xsmall" disabled={ !done } onclick={ parent.remove }>Remove</a></label>
+        <input type="checkbox" checked={ done } onclick={ parent.toggle }> <span class="{completed : done}"> { title } </span><button class="pure-button button-error button-xsmall" disabled={ !done ? 'disabled' : '' } onclick={ parent.remove }>Remove</button></label>
     </li>
   </ul>
 
   <form class="pure-form" onsubmit={ add }>
     <input name="input" onkeyup={ edit }>
-    <button class="pure-button" type="submit" disabled={ !text }>Add #{ items.filter(filter).length + 1 }</button>
+    <button class="pure-button" type="submit" disabled={ !text ? 'disabled' : '' }>Add #{ items.filter(filter).length + 1 }</button>
   </form>
 
   <!-- this script tag is optional -->
